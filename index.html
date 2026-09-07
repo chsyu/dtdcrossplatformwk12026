@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>學習網頁排版</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title">排版練習</p>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="#home">首頁</a>
+      <a href="#about">關於</a>
+    </nav>
+  </header>
+
+  <main id="home" class="site-main">
+    <h1>學習網頁排版</h1>
+    <p>
+      這是一個用來練習靜態網頁結構的簡單頁面。頁面分成 Header、內文、圖片與 Footer，
+      方便對照 HTML 語意標籤與 CSS 排版效果。
+    </p>
+    <p id="about">
+      你可以修改 <code>styles.css</code> 裡的間距、對齊方式或顏色變數，立刻觀察版面如何改變。
+      圖片使用響應式寬度，在窄螢幕上也不會撐破版面。
+    </p>
+
+    <figure class="content-figure">
+      <img
+        src="https://picsum.photos/id/1015/960/540"
+        alt="山景示範圖，用於練習圖片排版"
+        width="960"
+        height="540"
+      >
+      <figcaption>示範圖片：之後可改成本機 images/ 資料夾中的檔案。</figcaption>
+    </figure>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 排版練習</p>
+    <a href="https://dtd.ntue.edu.tw">DTD's Web</a>
+  </footer>
+</body>
+</html>
